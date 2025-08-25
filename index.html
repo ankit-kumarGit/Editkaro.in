@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editkaro.in – Portfolio</title>
+  <meta name="description" content="Interactive portfolio for Editkaro.in – social media marketing & video editing agency." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 18V6l6 4 8-5v14l-8-5-6 4Z" fill="white"/></svg></div>
+        <h1>Editkaro.in</h1>
+        <span class="chip" title="Social Media Marketing & Video Editing">SMM • Video Editing</span>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn ghost toggle" aria-label="Toggle theme">🌙 <span class="hide-sm">Theme</span></button>
+        <a href="#contact" class="btn primary">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h2 class="headline">Scroll‑stopping edits for brands, creators, gamers & storytellers.</h2>
+        <p class="sub">We craft <strong>shorts</strong>, <strong>long‑form</strong>, <strong>gaming</strong>, <strong>football</strong>, <strong>eCommerce ads</strong>, <strong>documentary‑style</strong>, <strong>anime</strong> and <strong>color‑graded</strong> videos that convert.</p>
+        <div class="badges">
+          <span class="chip">24h Express</span>
+          <span class="chip">Motion Graphics</span>
+          <span class="chip">YouTube/IG/TikTok</span>
+          <span class="chip">Ad Creatives</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><div class="n">2K+</div><div>Videos Delivered</div></div>
+          <div class="kpi"><div class="n">120+</div><div>Clients</div></div>
+          <div class="kpi"><div class="n">98%</div><div>On‑time</div></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" muted autoplay loop playsinline style="width:100%; border-radius:14px"></video>
+        <p style="margin:10px 0 0; color:var(--muted); font-size:.92rem">Showreel preview • Replace with Editkaro.in reel</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- CONTROLS -->
+    <div class="controls">
+      <div class="filters" aria-label="Filter by category">
+        <button class="btn" data-filter="all">All</button>
+        <button class="btn" data-filter="Shorts">Short‑form</button>
+        <button class="btn" data-filter="Long">Long‑form</button>
+        <button class="btn" data-filter="Gaming">Gaming</button>
+        <button class="btn" data-filter="Football">Football</button>
+        <button class="btn" data-filter="Ecommerce">eCommerce Ads</button>
+        <button class="btn" data-filter="Documentary">Documentary</button>
+        <button class="btn" data-filter="Color">Color Grading</button>
+        <button class="btn" data-filter="Anime">Anime</button>
+        <button class="btn" data-filter="Ads">Ads</button>
+      </div>
+      <div class="search">
+        <input id="search" type="search" placeholder="Search titles, tags…" aria-label="Search portfolio">
+      </div>
+    </div>
+
+    <!-- GRID -->
+    <div id="grid" class="grid" aria-live="polite"></div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Video lightbox">
+      <div class="dialog">
+        <div class="head">
+          <div class="info">
+            <span id="modalTag" class="tag">Category</span>
+            <strong id="modalTitle">Title</strong>
+          </div>
+          <button class="close" aria-label="Close" id="closeModal">✕</button>
+        </div>
+        <video id="modalVideo" controls playsinline></video>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <footer id="contact">
+      <div class="container">
+        <h3>Ready to elevate your content?</h3>
+        <p>Tell us about your project. We respond within 24 hours.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:hello@editkaro.in?subject=Project%20Inquiry%20–%20Editkaro.in">Email Us</a>
+          <a class="btn" href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn ghost" href="#">Download Rate Card</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
