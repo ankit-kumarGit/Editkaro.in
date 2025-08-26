@@ -2,6 +2,9 @@
 
 A modern personal portfolio website built using HTML, CSS, and JavaScript. This project is designed to showcase your work, skills, and projects in a visually appealing and interactive manner.
 
+## 🔗 Website Link
+https://editkaroguyz.netlify.app/
+
 ## 🚀 Features
 Responsive Design – Works seamlessly on desktops, tablets, and mobile devices.
 Navigation Bar – Smooth navigation to sections like Home, About, Skills, Projects, and Contact.
